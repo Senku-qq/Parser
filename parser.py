@@ -13,7 +13,6 @@ if response.status_code == 200:
     titles = soup.find_all('p')
     for title in titles:
         file.writelines(title.text.strip() + "\n")
+    file.close()
 else:
     print(f"Ошибка загрузки страницы: {response.status_code}")
-
-file.close()
