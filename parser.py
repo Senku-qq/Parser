@@ -12,8 +12,10 @@ if response.status_code == 200:
     # Ищем данные (например, заголовки статей)
     titles = soup.find_all('p')
     for title in titles:
-        sorttitle = str(sorted(title.text.strip())).strip("'[],./n")
-        file.writelines(sorttitle + "\n")
+        sorttitle = title.text.strip().split()
+        sorttitle = list(sorttitle)
+        sorttitle = sorttitle[0:100]
+        print((sorttitle.sort()))
     file.close()
 else:
     print(f"Ошибка загрузки страницы: {response.status_code}")
