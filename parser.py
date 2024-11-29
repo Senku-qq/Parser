@@ -8,7 +8,7 @@ url = "https://en.wikipedia.org/wiki/Linux"
 response = requests.get(url)
 if response.status_code == 200:
     soup = BeautifulSoup(response.text, 'html.parser')
-    file = open("parser.txt", "w+", encoding="utf8")
+    file = open("./cache/parser.txt", "w+", encoding="utf8")
     # Ищем данные (например, заголовки статей)
     titles = soup.find_all('p')
     for title in titles:
