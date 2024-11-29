@@ -13,5 +13,6 @@
 - [BeautifulSoup4](https://beautiful-soup-4.readthedocs.io/en/latest/)
 
 #### All requirements are in ./requirements.txt
-you can simply download they with command:
+you can simply download they with:
+    
     pip install -r requirements.txt
