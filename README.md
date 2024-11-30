@@ -3,7 +3,7 @@
 ![alt text](./cache/commit.jpg)
 
 ## Authors
-- [@senqu_q](https://www.github.com/senku-q)
+- [@senku_q](https://www.github.com/senku-q)
 - [@shaadowww](https://www.gitgub.com/shaadowww)
 - [@Vellih0r](https:/www.github.com/Vellih0r)
 
