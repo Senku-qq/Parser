@@ -1,4 +1,0 @@
-BeautifulSoup4
-urllib3
-requests
-Sumy
