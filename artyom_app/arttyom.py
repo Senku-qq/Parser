@@ -16,7 +16,7 @@ def summarize_paragraph(paragraph, sentences_count=100):
     return summary
 
 if __name__ == "__main__":
-    paragraph = open("misha_app/text.txt", "r", encoding="utf-8").read()
+    paragraph = open("artyom_app/text.txt", "r", encoding="utf-8").read()
     sentences_count = 100
     summary = summarize_paragraph(paragraph, sentences_count)
 
