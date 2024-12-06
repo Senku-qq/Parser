@@ -1,5 +1,10 @@
-Цього разу переважна кількість серіалів вийшла з частково американським виробництвом
-І це відображає об'єктивну перевагу в світі Сполучених Штатів – в економіці, зброї, впливі – і в кіно також, нема куди правди діти
-Все це в Америці є, і воно дає результат
-Не завжди все добре, але є з чого обрати, що для глядача головне
-Ми вибрали і пропонуємо найкраще кіно
+[g] When combined with Android, which is Linux-based and designed for smartphones, they have the largest installed base of all general-purpose operating systems
+In 1984, AT&T divested itself of its regional operating companies, and was released from its obligation not to enter the computer business; freed of that obligation, Bell Labs began selling Unix as a proprietary product, where users were not legally allowed to modify it
+[68] Developers worked to integrate GNU components with the Linux kernel, creating a fully functional and free operating system
+Commercial use began when Dell and IBM, followed by Hewlett-Packard, started offering Linux support to escape Microsoft's monopoly in the desktop operating system market
+Linux distributions have also gained popularity with various local and national governments, such as the federal government of Brazil
+Many developers of open-source software agree that the Linux kernel was not designed but rather evolved through natural selection
+The CLI is particularly suited for automation of repetitive or delayed tasks and provides very simple inter-process communication
+Many programming languages have a cross-platform reference implementation that supports Linux, for example PHP, Perl, Ruby, Python, Java, Go, Rust and Haskell
+Guile Scheme acts as an extension language targeting the GNU system utilities, seeking to make the conventionally small, static, compiled C programs of Unix design rapidly and dynamically extensible via an elegant, functional high-level scripting system; many GNU programs can be compiled with optional Guile bindings to this end
+According to the study, if all this software had been developed by conventional proprietary means, it would have cost about US$1

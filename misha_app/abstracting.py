@@ -20,3 +20,8 @@ def summarize_paragraph(paragraph, sentences_count=2, language="english"):
 def display_summary(summary):
     for sentence in summary:
         print(sentence)
+
+
+if __name__ == "__main__":
+    summarize_paragraph()
+    display_summary()

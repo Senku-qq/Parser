@@ -16,7 +16,7 @@ def summarize_paragraph(paragraph, sentences_count=2):
     summary = summarizer(parser.document, sentences_count)
     return summary
 paragraph = open("parser.txt", "r", encoding="utf-8").read()
-sentences_count = 5
+sentences_count = 10
 summary = summarize_paragraph(paragraph, sentences_count)
 
 with open('text2.txt', 'w', encoding="utf-8") as f:

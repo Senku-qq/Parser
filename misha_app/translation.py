@@ -18,7 +18,7 @@ def translate_text(text_parts, lang):
 
 
 def get_language(text):
-    lang, confidence = langid.classify(text) 
+    lang = langid.classify(text) 
     return lang
 
 if __name__ == "__main__":
