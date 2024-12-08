@@ -20,7 +20,7 @@ if __name__ == "__main__":
     sentences_count = 100
     summary = summarize_paragraph(paragraph, sentences_count)
 
-    with open('text2.txt', 'w', encoding="utf-8") as f:
+    with open('artyom_app/text2.txt', 'w', encoding="utf-8") as f:
         for sentence in summary:
             f.write(str(sentence))
             f.write("\n")
