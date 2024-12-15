@@ -7,13 +7,15 @@ import nltk
 nltk.download('punkt')
 
 
-def summarize_paragraph(paragraph, sentences_count=2, language="english"):
+def summarize_paragraph(paragraph, sentences_output_amount=2, language="english"):
+    """Summarizes the paragraph using LSA algorithm
+    Args: paragraph - string, sentences_output_amount - int, language - string"""
     parser = PlaintextParser.from_string(paragraph, Tokenizer("language"))
 
     summarizer = LsaSummarizer(Stemmer("language"))
     summarizer.stop_words = get_stop_words("language")
 
-    summary = summarizer(parser.document, sentences_count)
+    summary = summarizer(parser.document, sentences_output_amount)
     return summary
 
 
