@@ -28,9 +28,8 @@ async def parsing(msg: Message):
             if response.status_code == 200:
                 soup = BeautifulSoup(response.text, 'html.parser')
                 with open('parsed_text.txt', 'w+', encoding='utf8') as file:
-                    titles = soup.getText()
-                    for t in titles:
-                        file.writelines(t.text.strip() + '\n')
+                    titles = soup.get_text()
+                    file.writelines(titles)
                     parsed = FSInputFile('parsed_text.txt')
                 await msg.reply_document(parsed, caption='Вот твой отпаршенный файлик')
             else:   
