@@ -17,12 +17,6 @@ URL_REGEX = r'(https?://[^\s]+|www\.[^\s]+)'
 async def cmd_start(msg: Message):
     await msg.answer("Welcome to Our Parser Bot! This bot is used for parsing from any article (link)!")
 
-@router.message(Command('help'))
-async def cmd_help(msg: Message):
-    await msg.answer('''
-Привіт! Скинь мені будь ласка посилання, і я тобі надішлю найголовне з цього сайту (посилання)
-\n''')
-
 @router.message(F.text)
 async def parsing(msg: Message):
     username = msg.from_user.username
