@@ -1,6 +1,6 @@
 import langid
 from deep_translator import GoogleTranslator
-
+import re 
 
 def sepate_text(text):
     # split text into pieces of 5000 characters each
@@ -24,6 +24,13 @@ def get_language(text):
 if __name__ == "__main__":
     file = (open("parser.txt", "r", encoding="utf8"))
     text = sepate_text(file.read())
-    print(translate_text(text, "ru"))
-
+    
 # красиво оформить переведенное
+    clear_text = open("parser.txt", "r", encoding="utf-8") 
+    file_with_clear_text = open("parser1.txt", "w", encoding="utf-8")
+    for line in clear_text:
+            beauty_text = re.sub(r"\[\d+\]", "",line )
+            file_with_clear_text.write(beauty_text)
+    print(translate_text(text, "ru"))
+    file.close()
+
