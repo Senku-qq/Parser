@@ -6,11 +6,12 @@ from bs4 import BeautifulSoup
 from aiogram import F, Router
 from aiogram.filters import CommandStart, Command
 from aiogram import F, Router
-from aiogram.types import Message, MessageEntity
+from aiogram.types import Message
 
 router = Router()
 
 URL_REGEX = r'(https?://[^\s]+|www\.[^\s]+)'
+
 @router.message(CommandStart())
 async def cmd_start(msg: Message):
     await msg.answer("Welcome to Our Parser Bot! This bot is used for parsing from any article (link)!")
