@@ -8,8 +8,8 @@ def sepate_text(text):
     Returns: list of strings (5000 characters each)"""
     if len(text) > 4999:
         text_parts = [text[i:i + 4999] for i in range(0, len(text), 4999)]
-        return text_parts # list of separeted text parts
-    else: return [text] # I process text in for loop, so I need (it to be a list if it has only one part)
+        return "".join(text_parts) # list of separeted text parts
+    else: return text # I process text in for loop, so I need (it to be a list if it has only one part)
 
 
 def translate_text(text, lang):
@@ -20,7 +20,7 @@ def translate_text(text, lang):
     text_parts = sepate_text(text)
     for i in range(0, len(text_parts)):
         translated_text.append(GoogleTranslator(source='auto', target=lang).translate(text_parts[i]))
-    return translated_text
+    return " ".join(translated_text)
 
 
 def get_language(text):
