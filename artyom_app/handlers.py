@@ -1,12 +1,10 @@
 import re
 import logging
-import requests
 
-from bs4 import BeautifulSoup
 from aiogram import F, Router
 from aiogram.filters import CommandStart, Command
 from aiogram import F, Router
-from aiogram.types import Message, MessageEntity
+from aiogram.types import Message
 
 from main import main
 
