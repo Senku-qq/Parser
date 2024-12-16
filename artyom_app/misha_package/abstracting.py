@@ -16,13 +16,15 @@ def summarize_paragraph(paragraph, sentences_output_amount=2, language="english"
     summarizer.stop_words = get_stop_words(language)
     summary = summarizer(parser.document, sentences_output_amount)
     
-    #make summary a all-in-one string
-    arr = []
-    for sentence in summary:
-        arr.append(str(sentence))
     return summary
+
+def normalize_text(summary):
+    """Normalizes the text
+    Args: text - string
+    Returns: string"""
+    return "\n".join([str(i) for i in summary])
 
 if __name__ == "__main__":
     text = "This is a test text. It will be summarized. The summary will be displayed."
     summary = summarize_paragraph(text, sentences_output_amount=2)
-    print(summary)
+    print(normalize_text(summary))
