@@ -1,6 +1,9 @@
 import requests
 import re
 from urllib.robotparser import RobotFileParser
+import logging
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 #get main page's url
 def get_main_url(url):
@@ -23,8 +26,10 @@ def check_robots(url):
     parser.read()
 
     if parser.can_fetch('*', url):
+        logging.info(f"Page {url} is allowed to be downloaded")
         return True
     else:
+        logging.info(f"ERROR page {url} is NOT allowed to be downloaded")
         return False
 
 #test

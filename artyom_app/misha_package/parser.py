@@ -1,6 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import logging
+
+logging.basicConfig(level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+)
 
 def get_text(url):
     """Downloads text from the page and saves it into the file
@@ -17,8 +23,7 @@ def get_text(url):
         paragraphs = soup.find_all('p')
         for paragraph in paragraphs:
             text += paragraph.text.strip() + '\n'
-        #logging
-        #print(f"Page {url} downloaded successfully")
+        logging.info(f"Page {url} downloaded successfully")
         return text
     else:
         #logging

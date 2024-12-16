@@ -47,5 +47,3 @@ if __name__ == "__main__":
     translated = translate_text(text, 'ru')
     print(translated)
     print(back_translate(text, translated))
-
-# красиво оформить переведенное
