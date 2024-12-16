@@ -50,10 +50,15 @@ You can find the text in the file\n", "-"*37)
         text = parser.clear(text)
         if text:
             lang = translation.get_language(text)
-
-            sentences_amount = len(text.split("."))
-            sentences_amount *= 0.4
-            sentences_amount = int(sentences_amount)
+            choice = input("Do you want to have special amount of senteces? Yes/No: ")
+            if choice == "Yes":
+                sentences_amount = int(input("Please enter amount of senteces that u want to have: "))
+            elif choice == "No":
+                sentences_amount = len(text.split("."))
+                sentences_amount *= 0.4
+                sentences_amount = int(sentences_amount)
+            else:
+                print("Error! \nPlease input correct words")
 
             if lang != "en":
                 translated = translation.translate_text(text, lang)
