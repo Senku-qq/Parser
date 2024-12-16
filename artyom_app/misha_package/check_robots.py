@@ -3,7 +3,7 @@ import re
 from urllib.robotparser import RobotFileParser
 import logging
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(filename="backend.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s, datefmt=%Y-%m-%d %H:%M:%S")
 
 #get main page's url
 def get_main_url(url):

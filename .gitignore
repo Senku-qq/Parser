@@ -3,3 +3,4 @@
 config.py
 ./artyom_appmisha_package/__pycache__/
 *.txt
+*.log
