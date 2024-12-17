@@ -3,9 +3,10 @@ from bs4 import BeautifulSoup
 import re
 import logging
 
-logging.basicConfig(filename="backend.log", level=logging.INFO,
-        format="%(asctime)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S"
+logging.basicConfig(filename="db/backend.log",
+level=logging.INFO,
+format="%(asctime)s - %(levelname)s - %(message)s",
+datefmt="%Y-%m-%d %H:%M:%S"
 )
 
 def get_text(url):

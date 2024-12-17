@@ -1,13 +1,14 @@
-from misha_package import translation
-from misha_package import abstracting
-from misha_package import parser
-from misha_package import check_robots
+from backend import translation
+from backend import abstracting
+from backend import parser
+from backend import check_robots
 import datetime
 import logging
 
-logging.basicConfig(filename="backend.log", level=logging.INFO,
-        format="%(asctime)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S"
+logging.basicConfig(filename="db/backend.log",
+level=logging.INFO,
+format="%(asctime)s - %(levelname)s - %(message)s",
+datefmt="%Y-%m-%d %H:%M:%S"
 )
 
 def main(url, filename=str(datetime.datetime.now().strftime(r"%m_%d_%H-%M-%S")) + ".txt", prefered_language="en", percent=0.4):
