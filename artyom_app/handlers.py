@@ -1,5 +1,7 @@
 import re
 import logging
+import datetime
+import time
 
 from aiogram import F, Router
 from aiogram.filters import CommandStart, Command
@@ -20,17 +22,17 @@ async def parsing(msg: Message):
     username = msg.from_user.username
     logging.info(f"Username: @{username} | Message: {msg.text}")
     
-    if re.search(URL_REGEX, msg.text):  
+    if re.search(URL_REGEX, msg.text):
+        start = time.time()
         await msg.reply("Analyzing the text...")
 
-        #ADDED BY MISHA
-        summary = main(msg.text, "result.txt")
+        summary_name = "ABSTRACT" + datetime.datetime.now().strftime(r"%m_%d_%H-%M-%S") + ".txt"
+        summary = main(msg.text, filename=summary_name, prefered_language="ru", percent=0.4)
+        end = time.time() - start
         if summary:
-            text = ""
-            parsed = FSInputFile('result.txt')
-            await msg.reply_document(parsed, caption='Here are your summary')
+            parsed = FSInputFile(summary_name)
+            await msg.reply_document(parsed, caption=f"Here are your summary (Time: {end} sec)")
         else:
             await msg.reply("I can't parse this page :(")
-        #END
     else:
         await msg.reply(f"It is not a link >:(, but {msg.text}")
