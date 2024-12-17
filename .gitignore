@@ -1,7 +1,7 @@
 config/
 .venv/
-<<<<<<< HEAD
 config.py
-=======
-config.*
->>>>>>> f6c7f82fc84d873830d05e81f0a7bd2bb5161a0e
+__pychache__/
+misha_package/__pychache__/
+app/__pychache__/
+*.pyc
