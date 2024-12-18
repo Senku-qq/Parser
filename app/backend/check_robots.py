@@ -11,7 +11,7 @@ datefmt="%Y-%m-%d %H:%M:%S"
 
 #get main page's url
 def get_main_url(url):
-    """Returns main page's url
+    """Returns main page's url www.example.com/
     Args: url - string
     Returns: main page's url string"""
     pattern = r"(https?://[^/]+/)"

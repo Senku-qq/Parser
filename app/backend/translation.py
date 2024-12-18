@@ -27,8 +27,7 @@ def get_language(text):
     """Detects language of the text using langid library
     Args: text - string
     Returns: string(language code)"""
-    text_parts = sepate_text(text)
-    lang, confidence = langid.classify(text_parts[0])
+    lang, confidence = langid.classify(text[0:500])
     return lang
 
 
