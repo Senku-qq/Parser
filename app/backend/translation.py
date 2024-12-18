@@ -2,7 +2,7 @@ import langid # lib for language detection
 from deep_translator import GoogleTranslator
 
 
-def sepate_text(text):
+def separate_text(text):
     """Split text into pieces of 5000 characters each because Google Translator API has a limit of 5000 characters per request
     Args: text - string
     Returns: list of strings (5000 characters each)"""
@@ -17,7 +17,7 @@ def translate_text(text, lang):
     Args: text- string, lang - string(language code)
     Returns: list of strings (translated text)"""
     translated_text = ""
-    text_parts = sepate_text(text)
+    text_parts = separate_text(text)
     for i in text_parts:
         translated_text += (GoogleTranslator(source='auto', target=lang).translate(i))
     return translated_text
