@@ -5,3 +5,4 @@ __pychache__/
 misha_package/__pychache__/
 app/__pychache__/
 *.pyc
+*.log
