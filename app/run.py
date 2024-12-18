@@ -6,9 +6,9 @@ from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
 
 from handlers import router
-from config import TOKEN
+import config
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=config.TOKEN)
 dp = Dispatcher()
 
 
