@@ -15,7 +15,7 @@ def sepate_text(text):
 def translate_text(text, lang):
     """Translates text using Google Translator API
     Args: text- string, lang - string(language code)
-    Returns: list of strings (translated text)"""
+    Returns: list of strings (translated text)"""   
     translated_text = ""
     text_parts = sepate_text(text)
     for i in text_parts:
