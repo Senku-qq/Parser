@@ -78,13 +78,12 @@ async def parsing(msg: Message):
         else:
             await msg.reply("I can't parse this page :(")
 
-    elif msg.text in settings.lang_codes.items():
+    elif msg.text in settings.lang_codes.values():
         settings.lang = msg.text
         logging.info(f"Language: {settings.lang}")
         await msg.reply("Lenguage set to " + settings.lang)
     else:
         await msg.answer("Send me a valid URL or language code")
-        logging.info(f"Invalid URL {[i for i in settings.lang_codes.items()]}")
 
 
 @router.callback_query(lambda callback: callback.data.isdigit() and int(callback.data) in range(100))
@@ -96,7 +95,7 @@ async def set_volume_handler(callback: CallbackQuery):
 async def set_custom_language_handler(msg: Message):
     await msg.answer("Send me a language code")
 
-@router.callback_query(lambda callback: callback.data in settings.lang_codes.items())
+@router.callback_query(lambda callback: callback.data in settings.lang_codes.values())
 async def set_language_handler(callback: CallbackQuery):
     settings.lang = callback.data
     logging.info(f"Language: {settings.lang}")
