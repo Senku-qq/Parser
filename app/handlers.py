@@ -63,11 +63,11 @@ async def set_volume_handler(callback: CallbackQuery):
     settings.percent = int(callback.data) / 100
     logging.info(f"Volume: {settings.percent}")
 
+@router.callback_query(F.data == "custom")
+async def set_custom_language_handler(msg: Message):
+    await msg.answer("Send me a language code")
+
 @router.callback_query(lambda callback: callback.data in settings.lang_codes)
 async def set_language_handler(callback: CallbackQuery):
     settings.lang = callback.data
     logging.info(f"Language: {settings.lang}")
-
-@router.callback_query(F.data == "custom")
-async def set_custom_language_handler(msg: Message):
-    await msg.answer("Send me a language code")
