@@ -1,0 +1,96 @@
+Linux is typically packaged as a Linux distribution (distro), which includes the kernel and supporting system software and libraries—most of which are provided by third parties—to create a complete operating system, designed as a clone of Unix and released under the copyleft GPL license.
+Other than the Linux kernel, key components that make up a distribution may include a display server (windowing system), a package manager, a bootloader and a Unix shell.
+[g] When combined with Android, which is Linux-based and designed for smartphones, they have the largest installed base of all general-purpose operating systems.
+A working Unix system called Minix was later released but its license was not entirely free at the time and it was made for an educative purpose.
+The first entirely free Unix for personal computers, 386BSD, did not appear until 1992, by which time Torvalds had already built and publicly released the first version of the Linux kernel on the Internet.
+Like GNU and 386BSD, Linux did not have any Unix code, being a fresh reimplementation, and therefore avoided the then legal issues.
+Linux distributions became popular in the 1990s and effectively made Unix technologies accessible to home users on personal computers whereas previously it had been confined to sophisticated workstations.
+Distributions intended for servers may not have a graphical user interface at all or include a solution stack such as LAMP.
+The license means creating novel distributions is permitted by anyone and is easier than it would be for an operating system such as MacOS or Microsoft Windows.
+The Chromebook, which runs the Linux kernel-based ChromeOS,  dominates the US K–12 education market and represents nearly 20 percent of sub-$300 notebook sales in the US.
+This includes routers, automation controls, smart home devices, video game consoles, televisions (Samsung and LG smart TVs), automobiles (Tesla, Audi, Mercedes-Benz, Hyundai, and Toyota), and spacecraft (Falcon 9 rocket, Dragon crew capsule, and the Ingenuity Mars helicopter).
+The Unix operating system was conceived and implemented in 1969, at AT&T's Bell Labs, in the United States by Ken Thompson, Dennis Ritchie, Douglas McIlroy, and Joe Ossanna.
+First released in 1971, Unix was written entirely in assembly language, as was common practice at the time.
+In 1973, in a key pioneering approach, it was rewritten in the C programming language by Dennis Ritchie (except for some hardware and I/O routines).
+The availability of a high-level language implementation of Unix made its porting to different computer platforms easier.
+Due to an earlier antitrust case[specify] forbidding it[specify] from entering the computer business, AT&T licensed the operating system's source code as a trade secret to anyone who asked.
+[clarification needed] As a result, Unix grew quickly and became widely adopted by academic institutions and businesses.
+In 1984, AT&T divested itself of its regional operating companies, and was released from its obligation not to enter the computer business; freed of that obligation, Bell Labs began selling Unix as a proprietary product, where users were not legally allowed to modify it.
+Onyx Systems began selling early microcomputer-based Unix workstations in 1980.
+Later, Sun Microsystems, founded as a spin-off of a student project at Stanford University, also began selling Unix-based desktop workstations in 1982.
+While Sun workstations did not use commodity PC hardware, for which Linux was later originally developed, it represented the first successful commercial attempt at distributing a primarily single-user microcomputer that ran a Unix operating system.
+By the early 1990s, many of the programs required in an operating system (such as libraries, compilers, text editors, a command-line shell, and a windowing system) were completed, although low-level elements such as device drivers, daemons, and the kernel, called GNU Hurd, were stalled and incomplete.
+Although not released until 1992, due to legal complications, the development of 386BSD, from which NetBSD, OpenBSD and FreeBSD descended, predated that of Linux.
+Linus Torvalds has stated on separate occasions that if the GNU kernel or 386BSD had been available at the time (1991), he probably would not have created Linux.
+The course used a MicroVAX minicomputer running Ultrix, and one of the required texts was Operating Systems: Design and Implementation by Andrew S. Tanenbaum.
+On July 3, 1991, to implement Unix system calls, Linus Torvalds attempted unsuccessfully to obtain a digital copy of the POSIX standards documentation with a request to the comp.os.minix newsgroup.
+Torvalds initiated a switch from his original license, which prohibited commercial redistribution, to the GNU GPL.
+Developers worked to integrate GNU components with the Linux kernel, creating a fully functional and free operating system.
+Linus Torvalds had wanted to call his invention "Freax", a portmanteau of "free", "freak", and "x" (as an allusion to Unix).
+During the start of his work on the system, some of the project's makefiles included the name "Freax" for about half a year.
+To facilitate development, the files were uploaded to the FTP server (ftp.funet.fi) of FUNET in September 1991.
+Ari Lemmke, Torvalds' coworker at the Helsinki University of Technology (HUT) who was one of the volunteer administrators for the FTP server at the time, did not think that "Freax" was a good name, so he named the project "Linux" on the server without consulting Torvalds.
+According to a newsgroup post by Torvalds, the word "Linux" should be pronounced (/ˈlɪnʊks/ ⓘ LIN-uuks) with a short 'i' as in 'print' and 'u' as in 'put'.
+To further demonstrate how the word "Linux" should be pronounced, he included an audio guide with the kernel source code.
+The adoption of Linux in production environments, rather than being used only by hobbyists, started to take off first in the mid-1990s in the supercomputing community, where organizations such as NASA started to replace their increasingly expensive machines with clusters of inexpensive commodity computers running Linux.
+Commercial use began when Dell and IBM, followed by Hewlett-Packard, started offering Linux support to escape Microsoft's monopoly in the desktop operating system market.
+Zoë Kooyman is the executive director of the Free Software Foundation, which in turn supports the GNU components.
+These third-party components comprise a vast body of work and may include both kernel modules and user applications and libraries.
+Many developers of open-source software agree that the Linux kernel was not designed but rather evolved through natural selection.
+From nearly the beginning, it was rather casually hacked on by huge numbers of volunteers coordinating only through the Internet.
+Quality was maintained not by rigid standards or autocracy but by the naively simple strategy of releasing every week and getting feedback from hundreds of users within days, creating a sort of rapid Darwinian selection on the mutations introduced by developers."
+Bryan Cantrill, an engineer of a competing OS, agrees that "Linux wasn't designed, it evolved", but considers this to be a limitation, proposing that some features, especially those related to security, cannot be evolved into, "this is not a biological system at the end of the day, it's a software system."
+Device drivers are either integrated directly with the kernel or added as modules that are loaded while the system is running.
+The GNU userland is a key part of most systems based on the Linux kernel, with Android being the notable exception.
+The GNU C library, an implementation of the C standard library, works as a wrapper for the system calls of the Linux kernel necessary to the kernel-userspace interface, the toolchain is a broad collection of programming tools vital to Linux development (including the compilers used to build the Linux kernel itself), and the coreutils implement many basic Unix tools.
+More recently, the Linux community has sought to advance to Wayland as the new display server protocol, in place of X11.
+For desktop systems, the default user interface is usually graphical, although the CLI is commonly available through terminal emulator windows or on a separate virtual console.
+CLI shells are text-based user interfaces, which use text for both input and output.
+Most low-level Linux components, including various parts of the userland, use the CLI exclusively.
+The CLI is particularly suited for automation of repetitive or delayed tasks and provides very simple inter-process communication.
+On desktop systems, the most popular user interfaces are the GUI shells, packaged together with extensive Desktop environments, such as KDE Plasma, GNOME, MATE, Cinnamon, LXDE, Pantheon, and Xfce, though a variety of additional user interfaces exist.
+This custom interface is accessed through a client that resides on another system, not necessarily Linux-based.
+Several types of window managers exist for X11, including tiling, dynamic, stacking, and compositing.
+Desktop environments include window managers as part of their standard installations, such as Mutter (GNOME), KWin (KDE), or Xfwm (xfce), although users may choose to use a different window manager if preferred.
+Additionally, many window managers have been made for Wayland, such as Sway or Hyprland, as well as other graphical utilities such as Waybar or Rofi.
+Linux-based distributions are intended by developers for interoperability with other operating systems and established computing standards.
+Linux systems adhere to POSIX, SUS, LSB, ISO, and ANSI standards where possible, although to date only one Linux distribution has been POSIX.1 certified, Linux-FT. Free software projects, although developed through collaboration, are often produced independently of each other.
+The fact that the software licenses explicitly permit redistribution, however, provides a basis for larger-scale projects that collect the software produced by stand-alone projects and make it available all at once in the form of a Linux distribution.
+Distributions are maintained by individuals, loose-knit teams, volunteer organizations, and commercial entities.
+Distributions typically use a package manager such as apt, yum, zypper, pacman or portage to install, remove, and update all of a system's software from one central location.
+Some vendors develop and fund their distributions on a volunteer basis, Debian being a well-known example.
+Others maintain a community version of their commercial distributions, as Red Hat does with Fedora, and SUSE does with openSUSE.
+In many cities and regions, local associations known as Linux User Groups (LUGs) seek to promote their preferred distribution and by extension free software.
+They hold meetings and provide free demonstrations, training, technical support, and operating system installation to new users.
+Most distributions and free software / open-source projects have IRC chatrooms or newsgroups.
+Online forums are another means of support, with notable examples being Unix & Linux Stack Exchange, LinuxQuestions.org and the various distribution-specific support and community forums, such as ones for Ubuntu, Fedora, Arch Linux, Gentoo, etc.
+Although Linux distributions are generally available without charge, several large corporations sell, support, and contribute to the development of the components of the system and free software.
+Some of the major corporations that provide contributions include Intel, Samsung, Google, AMD, Oracle, and Facebook.
+Several corporations, notably Red Hat, Canonical, and SUSE have built a significant business around Linux distributions.
+The free software licenses, on which the various software packages of a distribution built on the Linux kernel are based, explicitly accommodate and encourage commercialization; the relationship between a Linux distribution as a whole and individual vendors may be seen as symbiotic.
+This used to be the norm in the computer industry, with operating systems such as CP/M, Apple DOS, and versions of the classic Mac OS before 7.6 freely copyable (but not modifiable).
+Most programming languages support Linux either directly or through third-party community based ports.
+Many programming languages have a cross-platform reference implementation that supports Linux, for example PHP, Perl, Ruby, Python, Java, Go, Rust and Haskell.
+First released in 2003, the LLVM project provides an alternative cross-platform open-source compiler for many languages.
+Linux distributions support shell scripts, awk, sed and make.
+For example, regular expressions are supported in programs like grep and locate, the traditional Unix message transfer agent Sendmail contains its own Turing complete scripting system, and the advanced text editor GNU Emacs is built around a general purpose Lisp interpreter.
+Most distributions also include support for PHP, Perl, Ruby, Python and other dynamic languages.
+While not as common, Linux also supports C# and other CLI languages (via Mono), Vala, and Scheme.
+Guile Scheme acts as an extension language targeting the GNU system utilities, seeking to make the conventionally small, static, compiled C programs of Unix design rapidly and dynamically extensible via an elegant, functional high-level scripting system; many GNU programs can be compiled with optional Guile bindings to this end.
+A number of Java virtual machines and development kits run on Linux, including the original Sun Microsystems JVM (HotSpot), and IBM's J2SE RE, as well as many open-source projects like Kaffe and Jikes RVM; Kotlin, Scala, Groovy and other JVM languages are also available.
+GNOME and KDE are popular desktop environments and provide a framework for developing applications.
+These projects are based on the GTK and Qt widget toolkits, respectively, which can also be used independently of the larger framework.
+There are a number of Integrated development environments available including Anjuta, Code::Blocks, CodeLite, Eclipse, Geany, ActiveState Komodo, KDevelop, Lazarus, MonoDevelop, NetBeans, and Qt Creator, while the long-established editors Vim, nano and Emacs remain popular.
+The Linux kernel is a widely ported operating system kernel, available for devices ranging from mobile phones to supercomputers; it runs on a highly diverse range of computer architectures, including ARM-based Android smartphones and the IBM Z mainframes.
+The kernel also runs on architectures that were only ever intended to use a proprietary manufacturer-created operating system, such as Macintosh computers (with PowerPC, Intel, and Apple silicon processors), PDAs, video game consoles, portable music players, and mobile phones.
+Linux has a reputation for supporting old hardware very well by maintaining standardized drivers for a long time.
+Over time, support for different hardware has improved in Linux, resulting in any off-the-shelf purchase having a "good chance" of being compatible.
+In 2014, a new initiative was launched to automatically collect a database of all tested hardware configurations.
+Analysts project a Compound Annual Growth Rate (CAGR) of 13.7% between 2024 and 2032, culminating in a market size of USD 34.90 billion by the latter year.
+Analysts and proponents attribute the relative success of Linux to its security, reliability, low cost, and freedom from vendor lock-in.
+He specifically dislikes some provisions in the new license which prohibit the use of the software in digital rights management.
+A 2001 study of Red Hat Linux 7.1 found that this distribution contained 30 million source lines of code.
+Using the Constructive Cost Model, the study estimated that this distribution required about eight thousand person-years of development time.
+This distribution contained close to 283 million source lines of code, and the study estimated that it would have required about seventy three thousand man-years and cost US$10.2 billion (in 2023 dollars) to develop by conventional means.
+The Free Software Foundation (FSF) prefers GNU/Linux as the name when referring to the operating system as a whole, because it considers Linux distributions to be variants of the GNU operating system initiated in 1983 by Richard Stallman, president of the FSF.
+As of May 2011[update], about 8% to 13% of the lines of code of the Linux distribution Ubuntu (version "Natty") is made of GNU components (the range depending on whether GNOME is considered part of GNU); meanwhile, 6% is taken by the Linux kernel, increased to 9% when including its direct dependencies.
