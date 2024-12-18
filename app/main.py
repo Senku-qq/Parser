@@ -20,14 +20,13 @@ def main(url, filename=str(datetime.datetime.now().strftime(r"%m_%d_%H-%M-%S")) 
         text = parser.clear(text)
 
         if text:
-            lang = translation.get_language(text)
-
             sentences_amount = len(text.split("."))
             sentences_amount *= percent
             sentences_amount = int(sentences_amount)
 
-            logging.info(f"Sentences amount: {len(text.split("."))}, Sentences for output: {sentences_amount}")
+            logging.info(f"Sentences amount input: {len(text.split("."))}, Sentences for output: {sentences_amount}")
 
+            lang = translation.get_language(text)
             if prefered_language != "en":
                 if lang != "en": translated = translation.translate_text(text, "en")
                 summary = abstracting.summarize_paragraph(text, sentences_output_amount=sentences_amount)
