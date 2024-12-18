@@ -14,7 +14,7 @@ settings = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(text="🇺🇸 English", callback_data="en"),
-            InlineKeyboardButton(text="🇺🇦 Ukrainian", callback_data="ua"),
+            InlineKeyboardButton(text="🇺🇦 Ukrainian", callback_data="uk"),
             InlineKeyboardButton(text="🇷🇺 Russian", callback_data="ru"),
         ],
         [
