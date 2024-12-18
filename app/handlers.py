@@ -59,7 +59,9 @@ async def cmd_start(msg: Message):
 @router.message(Command("settings"))
 async def cmd_settings(msg: Message):
     await msg.answer("You can choose volume and language of summary", reply_markup=s_kb.settings)
-
+@router.message(F.document)
+async def document(msg : Message):
+    await msg.answer("")
 @router.message(F.text)
 async def parsing(msg: Message):
     username = msg.from_user.username
@@ -77,19 +79,21 @@ async def parsing(msg: Message):
             await msg.reply_document(parsed, caption=f"Here are your summary (Time: {end} sec)")
         else:
             await msg.reply("I can't parse this page :(")
-
     elif msg.text in settings.lang_codes.values():
         settings.lang = msg.text
         logging.info(f"Language: {settings.lang}")
-        await msg.reply("Lenguage set to " + settings.lang)
+        await msg.reply("Language set to " + settings.lang)
     else:
         await msg.answer("Send me a valid URL or language code")
+        logging.info(f"Invalid URL {[i for i in settings.lang_codes.values()]}")
+#Я ЕБАЛ ГИТ В РОТ
 
 
 @router.callback_query(lambda callback: callback.data.isdigit() and int(callback.data) in range(100))
 async def set_volume_handler(callback: CallbackQuery):
     settings.percent = int(callback.data) / 100
     logging.info(f"Volume: {settings.percent}")
+    await callback.message.answer(f"Volume set to {settings.percent}")
 
 @router.callback_query(F.data == "custom")
 async def set_custom_language_handler(msg: Message):
@@ -99,3 +103,4 @@ async def set_custom_language_handler(msg: Message):
 async def set_language_handler(callback: CallbackQuery):
     settings.lang = callback.data
     logging.info(f"Language: {settings.lang}")
+    await callback.message.reply(f"Language set to {callback.data}")
