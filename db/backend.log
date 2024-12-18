@@ -706,3 +706,7 @@ Please select on of the supported languages:
 2024-12-18 19:18:15 - WARNING - Sleep for 1.515498 seconds and try again... (tryings = 1, bot id = 7596450347)
 2024-12-18 19:18:21 - INFO - Polling stopped
 2024-12-18 19:18:21 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-18 22:25:27 - INFO - Start polling
+2024-12-18 22:25:27 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-18 22:25:30 - INFO - Polling stopped
+2024-12-18 22:25:30 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'

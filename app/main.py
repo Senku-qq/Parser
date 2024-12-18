@@ -16,7 +16,7 @@ def main(url, filename=str(datetime.datetime.now().strftime(r"%m_%d_%H-%M-%S")) 
     Args: url - string, filename - string, prefered_language - string, percent - float(volume of the abstract)"""
 
     text = parsing(url)
-    abstractt(text, filename, prefered_language, percent)
+    return abstractt(text, filename, prefered_language, percent)
 
 def parsing(url):
     if check_robots.check_robots(url):
@@ -24,7 +24,6 @@ def parsing(url):
         text = parser.clear(text)
     return text
 
-<<<<<<< HEAD
 def abstractt(text, filename=str(datetime.datetime.now().strftime(r"%m_%d_%H-%M-%S")) + ".txt", prefered_language="en", percent=0.4):
     lang = translation.get_language(text)
 
@@ -40,22 +39,6 @@ def abstractt(text, filename=str(datetime.datetime.now().strftime(r"%m_%d_%H-%M-
         summary = abstracting.normalize_text(summary)
         summary = translation.translate_text(summary, prefered_language)
         logging.info(f"Prefered language option: {prefered_language}")
-=======
-        if text:
-            sentences_amount = len(text.split("."))
-            sentences_amount *= percent
-            sentences_amount = int(sentences_amount)
-
-            logging.info(f"Sentences amount input: {len(text.split("."))}, Sentences for output: {sentences_amount}")
-
-            lang = translation.get_language(text)
-            if prefered_language != "en":
-                if lang != "en": translated = translation.translate_text(text, "en")
-                summary = abstracting.summarize_paragraph(text, sentences_output_amount=sentences_amount)
-                summary = abstracting.normalize_text(summary)
-                summary = translation.translate_text(summary, prefered_language)
-                logging.info(f"Prefered language option: {prefered_language}")
->>>>>>> 40d4b7f65fc148ae458c033979f4cd075e7467e8
 
     else:
         logging.info(f"Default language option: {lang}")
