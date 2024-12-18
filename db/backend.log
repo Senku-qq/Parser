@@ -1,0 +1,73 @@
+2024-12-17 20:54:10 - INFO - Start polling
+2024-12-17 20:54:11 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-17 20:54:19 - INFO - Username: @firtttree | Message: https://en.wikipedia.org/wiki/Linux
+2024-12-17 20:54:24 - INFO - Page https://en.wikipedia.org/wiki/Linux is allowed to be downloaded
+2024-12-17 20:54:25 - INFO - Page https://en.wikipedia.org/wiki/Linux downloaded successfully
+2024-12-17 20:54:25 - INFO - initializing identifier
+2024-12-17 20:54:26 - INFO - Sentences amount: 246, Sentences for output: 98
+2024-12-17 20:54:26 - INFO - Default language option: en
+2024-12-17 20:54:27 - INFO - Update id=818663165 is handled. Duration 8156 ms by bot id=7596450347
+2024-12-17 20:56:23 - INFO - Polling stopped
+2024-12-17 20:56:24 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-17 20:57:00 - INFO - Start polling
+2024-12-17 20:57:00 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-17 20:57:03 - INFO - Username: @firtttree | Message: https://en.wikipedia.org/wiki/Linux
+2024-12-17 20:57:06 - INFO - Page https://en.wikipedia.org/wiki/Linux is allowed to be downloaded
+2024-12-17 20:57:07 - INFO - Page https://en.wikipedia.org/wiki/Linux downloaded successfully
+2024-12-17 20:57:07 - INFO - initializing identifier
+2024-12-17 20:57:08 - INFO - Sentences amount: 246, Sentences for output: 98
+2024-12-17 20:57:08 - INFO - Default language option: en
+2024-12-17 20:57:09 - INFO - Update id=818663166 is handled. Duration 6267 ms by bot id=7596450347
+2024-12-17 20:57:56 - INFO - Polling stopped
+2024-12-17 20:57:56 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-17 21:07:25 - INFO - Start polling
+2024-12-17 21:07:26 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-17 21:07:30 - INFO - Username: @firtttree | Message: https://en.wikipedia.org/wiki/Linux
+2024-12-17 21:07:31 - INFO - Page https://en.wikipedia.org/wiki/Linux is allowed to be downloaded
+2024-12-17 21:07:32 - INFO - Page https://en.wikipedia.org/wiki/Linux downloaded successfully
+2024-12-17 21:07:32 - INFO - initializing identifier
+2024-12-17 21:07:34 - INFO - Sentences amount: 246, Sentences for output: 98
+2024-12-17 21:07:42 - INFO - Prefered language option: pl
+2024-12-17 21:07:42 - INFO - Update id=818663167 is handled. Duration 12020 ms by bot id=7596450347
+2024-12-17 21:11:19 - INFO - Polling stopped
+2024-12-17 21:11:19 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-17 21:11:28 - INFO - Start polling
+2024-12-17 21:11:29 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-17 21:11:29 - INFO - Username: @firtttree | Message: https://en.wikipedia.org/wiki/Linux
+2024-12-17 21:11:30 - INFO - Page https://en.wikipedia.org/wiki/Linux is allowed to be downloaded
+2024-12-17 21:11:31 - INFO - Page https://en.wikipedia.org/wiki/Linux downloaded successfully
+2024-12-17 21:11:31 - INFO - initializing identifier
+2024-12-17 21:11:33 - INFO - Sentences amount: 246, Sentences for output: 98
+2024-12-17 21:11:40 - INFO - Prefered language option: pl
+2024-12-17 21:11:40 - INFO - Update id=818663168 is handled. Duration 11086 ms by bot id=7596450347
+2024-12-17 21:13:16 - INFO - Username: @firtttree | Message: https://www.youtube.com/watch?v=jjLAGMa-tHI
+2024-12-17 21:13:19 - INFO - Page https://www.youtube.com/watch?v=jjLAGMa-tHI is allowed to be downloaded
+2024-12-17 21:13:20 - INFO - Page https://www.youtube.com/watch?v=jjLAGMa-tHI downloaded successfully
+2024-12-17 21:13:20 - INFO - Update id=818663169 is handled. Duration 4288 ms by bot id=7596450347
+2024-12-17 21:13:57 - INFO - Username: @firtttree | Message: https://github.com/Senku-qq/Parser/tree/artyom
+2024-12-17 21:13:58 - INFO - Page https://github.com/Senku-qq/Parser/tree/artyom is allowed to be downloaded
+2024-12-17 21:13:59 - INFO - Page https://github.com/Senku-qq/Parser/tree/artyom downloaded successfully
+2024-12-17 21:13:59 - INFO - Sentences amount: 3, Sentences for output: 1
+2024-12-17 21:14:00 - INFO - Prefered language option: pl
+2024-12-17 21:14:00 - INFO - Update id=818663170 is handled. Duration 3585 ms by bot id=7596450347
+2024-12-17 21:16:25 - INFO - Update id=818663171 is handled. Duration 407 ms by bot id=7596450347
+2024-12-17 21:18:11 - INFO - Username: @firtttree | Message: https://leetcode.com/problemset/
+2024-12-17 21:18:12 - INFO - ERROR page https://leetcode.com/problemset/ is NOT allowed to be downloaded
+2024-12-17 21:18:12 - INFO - Update id=818663172 is handled. Duration 1779 ms by bot id=7596450347
+2024-12-17 21:18:25 - INFO - Username: @firtttree | Message: https://leetcode.com/
+2024-12-17 21:18:26 - INFO - ERROR page https://leetcode.com/ is NOT allowed to be downloaded
+2024-12-17 21:18:26 - INFO - Update id=818663173 is handled. Duration 1141 ms by bot id=7596450347
+2024-12-17 21:18:38 - INFO - Username: @firtttree | Message: https://leetcode.com/problems/add-two-numbers/
+2024-12-17 21:18:39 - INFO - ERROR page https://leetcode.com/problems/add-two-numbers/ is NOT allowed to be downloaded
+2024-12-17 21:18:39 - INFO - Update id=818663174 is handled. Duration 914 ms by bot id=7596450347
+2024-12-17 21:18:57 - INFO - Username: @firtttree | Message: https://leetcode.com/problems/add-two-numbers/description/
+2024-12-17 21:18:58 - INFO - ERROR page https://leetcode.com/problems/add-two-numbers/description/ is NOT allowed to be downloaded
+2024-12-17 21:18:58 - INFO - Update id=818663175 is handled. Duration 785 ms by bot id=7596450347
+2024-12-17 21:19:18 - INFO - Username: @firtttree | Message: https://www.wordhippo.com/what-is/the-meaning-of/russian-word-4bd3df9fb7beade270abf579ddcbc6f58dfa6da0.html
+2024-12-17 21:19:19 - INFO - Update id=818663176 is not handled. Duration 846 ms by bot id=7596450347
+2024-12-17 21:19:19 - ERROR - Cause exception while process update id=818663176 by bot id=7596450347
+2024-12-18 16:10:02 - INFO - Start polling
+2024-12-18 16:10:02 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-18 16:17:27 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 16:17:27 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 16:17:39 - INFO - Connection established (tryings = 1, bot id = 7596450347)
