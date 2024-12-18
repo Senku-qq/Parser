@@ -19,7 +19,7 @@ def summarize_paragraph(paragraph, sentences_output_amount=2, language="english"
     return summary
 
 def normalize_text(summary):
-    """Normalizes the text
+    """Converts summary from list of sentences to string
     Args: text - string
     Returns: string"""
     return "\n".join([str(i) for i in summary])

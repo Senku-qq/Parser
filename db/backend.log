@@ -646,3 +646,63 @@ Please select on of the supported languages:
 2024-12-18 22:16:06 - INFO - Update id=818663474 is handled. Duration 1905 ms by bot id=7596450347
 2024-12-18 22:16:18 - INFO - Polling stopped
 2024-12-18 22:16:19 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+
+2024-12-18 19:16:59 - INFO - Start polling
+2024-12-18 19:17:00 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-18 19:17:04 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:17:04 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 19:17:10 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:17:10 - WARNING - Sleep for 1.225933 seconds and try again... (tryings = 1, bot id = 7596450347)
+2024-12-18 19:17:16 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:17:16 - WARNING - Sleep for 1.531574 seconds and try again... (tryings = 2, bot id = 7596450347)
+2024-12-18 19:17:20 - INFO - Connection established (tryings = 3, bot id = 7596450347)
+2024-12-18 19:17:20 - INFO - Username: @firtttree | Message: uk
+2024-12-18 19:17:20 - INFO - Language: uk
+2024-12-18 19:17:20 - INFO - Update id=818663411 is handled. Duration 430 ms by bot id=7596450347
+2024-12-18 19:17:23 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:17:23 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 19:17:26 - INFO - Connection established (tryings = 1, bot id = 7596450347)
+2024-12-18 19:17:26 - INFO - Username: @firtttree | Message: https://wiki.archlinux.org/title/Arch_Linux
+2024-12-18 19:17:26 - INFO - Page https://wiki.archlinux.org/title/Arch_Linux is allowed to be downloaded
+2024-12-18 19:17:27 - INFO - Page https://wiki.archlinux.org/title/Arch_Linux downloaded successfully
+2024-12-18 19:17:27 - INFO - Sentences amount input: 54, Sentences for output: 27
+2024-12-18 19:17:27 - INFO - initializing identifier
+2024-12-18 19:17:30 - INFO - Prefered language option: uk
+2024-12-18 19:17:30 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:17:30 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 19:17:30 - INFO - Update id=818663412 is handled. Duration 4614 ms by bot id=7596450347
+2024-12-18 19:17:34 - INFO - Connection established (tryings = 1, bot id = 7596450347)
+2024-12-18 19:17:34 - INFO - Language: en
+2024-12-18 19:17:34 - INFO - Update id=818663413 is handled. Duration 0 ms by bot id=7596450347
+2024-12-18 19:17:35 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:17:35 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 19:17:36 - INFO - Connection established (tryings = 1, bot id = 7596450347)
+2024-12-18 19:17:36 - INFO - Username: @firtttree | Message: af
+2024-12-18 19:17:36 - INFO - Language: af
+2024-12-18 19:17:37 - INFO - Update id=818663414 is handled. Duration 200 ms by bot id=7596450347
+2024-12-18 19:17:44 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:17:44 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 19:17:49 - INFO - Connection established (tryings = 1, bot id = 7596450347)
+2024-12-18 19:17:49 - INFO - Username: @firtttree | Message: /setting
+2024-12-18 19:17:49 - INFO - Update id=818663415 is handled. Duration 108 ms by bot id=7596450347
+2024-12-18 19:17:51 - INFO - Username: @firtttree | Message: /setting
+2024-12-18 19:17:52 - INFO - Update id=818663416 is handled. Duration 214 ms by bot id=7596450347
+2024-12-18 19:17:53 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:17:53 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 19:18:02 - INFO - Connection established (tryings = 1, bot id = 7596450347)
+2024-12-18 19:18:02 - INFO - Update id=818663417 is handled. Duration 109 ms by bot id=7596450347
+2024-12-18 19:18:03 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:18:03 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 19:18:06 - INFO - Connection established (tryings = 1, bot id = 7596450347)
+2024-12-18 19:18:06 - INFO - Username: @firtttree | Message: https://wiki.archlinux.org/title/Arch_Linux
+2024-12-18 19:18:07 - INFO - Page https://wiki.archlinux.org/title/Arch_Linux is allowed to be downloaded
+2024-12-18 19:18:07 - INFO - Page https://wiki.archlinux.org/title/Arch_Linux downloaded successfully
+2024-12-18 19:18:07 - INFO - Sentences amount input: 54, Sentences for output: 27
+2024-12-18 19:18:09 - INFO - Prefered language option: af
+2024-12-18 19:18:09 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:18:09 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7596450347)
+2024-12-18 19:18:10 - INFO - Update id=818663419 is handled. Duration 3586 ms by bot id=7596450347
+2024-12-18 19:18:15 - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2024-12-18 19:18:15 - WARNING - Sleep for 1.515498 seconds and try again... (tryings = 1, bot id = 7596450347)
+2024-12-18 19:18:21 - INFO - Polling stopped
+2024-12-18 19:18:21 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
