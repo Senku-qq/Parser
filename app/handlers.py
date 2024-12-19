@@ -6,8 +6,8 @@ from aiogram import F, Router
 from aiogram.filters import CommandStart, Command
 from aiogram import F, Router
 from aiogram.types import Message, FSInputFile, CallbackQuery
-
-from main import main
+import pdfplumber
+from main import main, abstractt
 import keyboard as s_kb
 
 router = Router()
@@ -59,9 +59,52 @@ async def cmd_start(msg: Message):
 @router.message(Command("settings"))
 async def cmd_settings(msg: Message):
     await msg.answer("You can choose volume and language of summary", reply_markup=s_kb.settings)
+
 @router.message(F.document)
-async def document(msg : Message):
-    await msg.answer("")
+async def handle_document(msg: Message):
+    document = msg.document
+    file_id = document.file_id  # Уникальный ID файла
+    file_name = document.file_name or "Безымянный файл" # Имя файла
+    file_size = document.file_size or "0"# Размер файла
+    file = await msg.bot.get_file(file_id)
+    file_path = file.file_path
+    logging.info(str(file_path))
+    # Загружаем файл с помощью aiogram
+    file = await msg.bot.download_file(file_path, destination=f"db/{file_name}")
+    time.sleep(2)
+    await msg.answer(f"Файл {file_name} размером {file_size} загружен!")
+    start = time.time()
+    summary_name = "db/ABSTRACT" + datetime.datetime.now().strftime(r"%m_%d_%H-%M-%S") + "text-from-document" + ".txt"
+    text_from_document = ""
+    #pd file opening
+    if ".pdf" in file_name:
+        with pdfplumber.open(f"db/{file_name}") as pdf:
+            with open("db/output.txt", "w+", encoding="utf-8") as f :
+                for page in pdf.pages:
+                    text = page.extract_text()
+                    text_from_document += text + "\n"
+                f.write(text_from_document)
+                f.seek(0)
+                pdf_read = f.read()
+            logging.info(pdf_read)
+        summary = abstractt(pdf_read, filename=summary_name, prefered_language=settings.lang, percent=settings.percent)
+        if summary:
+            logging.info(summary)
+            end = time.time() - start
+            parsed = FSInputFile(summary_name)
+            await msg.answer_document(parsed, caption=f"Here are your summary (Time: {end} sec)")
+        else:
+            await msg.reply("I can't parse this document :(")
+    else:
+        with open(f"db/{file_name}", "r", encoding="utf-8") as doc:
+            doc_text = doc.read()
+        summary = abstractt(doc_text, filename=summary_name, prefered_language=settings.lang, percent=settings.percent)
+        if summary:
+            end = time.time() - start
+            parsed = FSInputFile(summary_name)
+            await msg.answer_document(parsed, caption=f"Here are your summary (Time: {end} sec)")
+        else:
+            await msg.reply("I can't parse this document :(")
 @router.message(F.text)
 async def parsing(msg: Message):
     username = msg.from_user.username
@@ -71,7 +114,7 @@ async def parsing(msg: Message):
         start = time.time()
         await msg.reply("Analyzing the text...")
 
-        summary_name = "ABSTRACT" + datetime.datetime.now().strftime(r"%m_%d_%H-%M-%S") + ".txt"
+        summary_name = "db/ABSTRACT" + datetime.datetime.now().strftime(r"%m_%d_%H-%M-%S") + ".txt"
         summary = main(msg.text, filename=summary_name, prefered_language=settings.lang, percent=settings.percent)
         end = time.time() - start
         if summary:
