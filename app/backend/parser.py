@@ -31,6 +31,7 @@ def get_text(url):
         print(f"Can't get page {url}\nError: {response.status_code}")
         return False
     
+#clear the text from the regular expression
 def clear(text, regular=r"\[\d+\]"):
     cleared = ""
     cleared += re.sub(regular, "",text)

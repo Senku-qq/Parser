@@ -1,4 +1,3 @@
-import requests
 import re
 from urllib.robotparser import RobotFileParser
 import logging
@@ -20,7 +19,7 @@ def get_main_url(url):
     return main_page.group(1)
 
 
-#robots.txt checking
+#robots.txt checking (is the page allowed to be downloaded)
 def check_robots(url):
     """Checks if the page is allowed to be downloaded
     Args: url - string
