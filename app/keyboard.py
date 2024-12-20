@@ -1,5 +1,6 @@
 from aiogram.types import InlineKeyboardMarkup , InlineKeyboardButton
 
+#buttons for settings menu
 settings = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -19,6 +20,9 @@ settings = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(text="📎 Custom", callback_data="custom")
+        ],
+        [
+            InlineKeyboardButton(text="📎 List of supported languages", callback_data="codes_list")
         ]
     ],
     resize_keyboard=True
