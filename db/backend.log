@@ -1,0 +1,322 @@
+2024-12-19 13:33:02 - INFO - Start polling
+2024-12-19 13:33:02 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-19 13:33:02 - INFO - Update id=818663495 is handled. Duration 234 ms by bot id=7596450347
+2024-12-19 13:33:21 - INFO - Polling stopped
+2024-12-19 13:33:21 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-19 13:34:51 - INFO - Start polling
+2024-12-19 13:34:52 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-19 13:37:39 - INFO - Update id=818663496 is handled. Duration 234 ms by bot id=7596450347
+2024-12-19 13:38:03 - INFO - Username: @azerty322 | Message: https://ru.m.wikipedia.org/wiki/Половой_член_человека
+2024-12-19 13:38:04 - INFO - Page https://ru.m.wikipedia.org/wiki/Половой_член_человека is allowed to be downloaded
+2024-12-19 13:38:05 - INFO - Page https://ru.m.wikipedia.org/wiki/Половой_член_человека downloaded successfully
+2024-12-19 13:38:05 - INFO - initializing identifier
+2024-12-19 13:38:10 - INFO - Sentences amount: 71, Sentences for output: 35
+2024-12-19 13:38:10 - INFO - Default language option: ru
+2024-12-19 13:38:10 - INFO - Update id=818663497 is not handled. Duration 7375 ms by bot id=7596450347
+2024-12-19 13:38:10 - ERROR - Cause exception while process update id=818663497 by bot id=7596450347
+RequestError: Request exception can happen due to an api connection error. Please check your connection and try again
+Traceback (most recent call last):
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\handlers.py", line 75, in parsing
+    summary = main(msg.text, filename=summary_name, prefered_language=settings.lang, percent=settings.percent)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\main.py", line 20, in main
+    return abstractt(text, filename, prefered_language, percent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\main.py", line 50, in abstractt
+    translated = translation.translate_text(text, "en")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\backend\translation.py", line 22, in translate_text
+    translated_text += (GoogleTranslator(source='auto', target=lang).translate(i))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\deep_translator\google.py", line 74, in translate
+    raise RequestError()
+deep_translator.exceptions.RequestError: Request exception can happen due to an api connection error. Please check your connection and try again
+2024-12-19 13:38:21 - INFO - Update id=818663498 is handled. Duration 155 ms by bot id=7596450347
+2024-12-19 13:38:26 - INFO - Update id=818663499 is handled. Duration 77 ms by bot id=7596450347
+2024-12-19 13:38:30 - INFO - Username: @azerty322 | Message: https://ru.m.wikipedia.org/wiki/Половой_член_человека
+2024-12-19 13:38:30 - INFO - Page https://ru.m.wikipedia.org/wiki/Половой_член_человека is allowed to be downloaded
+2024-12-19 13:38:31 - INFO - Page https://ru.m.wikipedia.org/wiki/Половой_член_человека downloaded successfully
+2024-12-19 13:38:31 - INFO - Sentences amount: 71, Sentences for output: 35
+2024-12-19 13:38:31 - INFO - Default language option: ru
+2024-12-19 13:38:32 - INFO - Update id=818663500 is not handled. Duration 2061 ms by bot id=7596450347
+2024-12-19 13:38:32 - ERROR - Cause exception while process update id=818663500 by bot id=7596450347
+RequestError: Request exception can happen due to an api connection error. Please check your connection and try again
+Traceback (most recent call last):
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\handlers.py", line 75, in parsing
+    summary = main(msg.text, filename=summary_name, prefered_language=settings.lang, percent=settings.percent)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\main.py", line 20, in main
+    return abstractt(text, filename, prefered_language, percent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\main.py", line 50, in abstractt
+    translated = translation.translate_text(text, "en")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\backend\translation.py", line 22, in translate_text
+    translated_text += (GoogleTranslator(source='auto', target=lang).translate(i))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\deep_translator\google.py", line 74, in translate
+    raise RequestError()
+deep_translator.exceptions.RequestError: Request exception can happen due to an api connection error. Please check your connection and try again
+2024-12-19 13:40:36 - INFO - Polling stopped
+2024-12-19 13:40:36 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-19 13:40:43 - INFO - Start polling
+2024-12-19 13:40:43 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-19 13:40:45 - INFO - Polling stopped
+2024-12-19 13:40:46 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-19 13:47:03 - INFO - Start polling
+2024-12-19 13:47:03 - INFO - Run polling for bot @ourparser_bot id=7596450347 - 'ourparserbot'
+2024-12-19 13:47:03 - INFO - Update id=818663501 is handled. Duration 313 ms by bot id=7596450347
+2024-12-19 13:47:14 - INFO - Username: @qsxhjq | Message: en
+2024-12-19 13:47:14 - INFO - Language: en
+2024-12-19 13:47:14 - INFO - Update id=818663502 is handled. Duration 4562 ms by bot id=7596450347
+2024-12-19 13:49:54 - INFO - Username: @qsxhjq | Message: https://ru.m.wikipedia.org/wiki/
+Половой член_человека
+2024-12-19 13:49:54 - INFO - Page https://ru.m.wikipedia.org/wiki/
+Половой член_человека is allowed to be downloaded
+2024-12-19 13:49:56 - INFO - Update id=818663503 is not handled. Duration 1782 ms by bot id=7596450347
+2024-12-19 13:49:56 - ERROR - Cause exception while process update id=818663503 by bot id=7596450347
+TypeError: expected string or bytes-like object, got 'bool'
+Traceback (most recent call last):
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\handlers.py", line 75, in parsing
+    summary = main(msg.text, filename=summary_name, prefered_language=settings.lang, percent=settings.percent)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\main.py", line 18, in main
+    text = parsing(url)
+           ^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\main.py", line 25, in parsing
+    text = parser.clear(text)
+           ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\backend\parser.py", line 36, in clear
+    cleared += re.sub(regular, "",text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py", line 186, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'bool'
+2024-12-19 13:52:32 - INFO - Username: @qsxhjq | Message: ru
+2024-12-19 13:52:32 - INFO - Language: ru
+2024-12-19 13:52:32 - INFO - Update id=818663504 is handled. Duration 375 ms by bot id=7596450347
+2024-12-19 13:52:39 - INFO - Username: @qsxhjq | Message: https://ru.m.wikipedia.org/wiki/
+2024-12-19 13:52:39 - INFO - Page https://ru.m.wikipedia.org/wiki/ is allowed to be downloaded
+2024-12-19 13:52:42 - INFO - Page https://ru.m.wikipedia.org/wiki/ downloaded successfully
+2024-12-19 13:52:42 - INFO - initializing identifier
+2024-12-19 13:53:04 - INFO - Sentences amount: 30, Sentences for output: 15
+2024-12-19 13:53:11 - INFO - Prefered language option: ru
+2024-12-19 13:53:11 - INFO - Update id=818663505 is handled. Duration 32141 ms by bot id=7596450347
+2024-12-19 13:55:22 - INFO - Username: @qsxhjq | Message: https://ru.m.wikipedia.org/wiki/Половой_член_человека
+2024-12-19 13:55:22 - INFO - Page https://ru.m.wikipedia.org/wiki/Половой_член_человека is allowed to be downloaded
+2024-12-19 13:55:34 - INFO - Page https://ru.m.wikipedia.org/wiki/Половой_член_человека downloaded successfully
+2024-12-19 13:55:34 - INFO - Sentences amount: 71, Sentences for output: 35
+2024-12-19 13:55:35 - INFO - Update id=818663506 is not handled. Duration 13719 ms by bot id=7596450347
+2024-12-19 13:55:35 - ERROR - Cause exception while process update id=818663506 by bot id=7596450347
+RequestError: Request exception can happen due to an api connection error. Please check your connection and try again
+Traceback (most recent call last):
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\handlers.py", line 75, in parsing
+    summary = main(msg.text, filename=summary_name, prefered_language=settings.lang, percent=settings.percent)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\main.py", line 20, in main
+    return abstractt(text, filename, prefered_language, percent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\main.py", line 38, in abstractt
+    if lang != "en": translated = translation.translate_text(text, "en")
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Artyom\Desktop\Parser\app\backend\translation.py", line 22, in translate_text
+    translated_text += (GoogleTranslator(source='auto', target=lang).translate(i))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Artyom\AppData\Local\Programs\Python\Python312\Lib\site-packages\deep_translator\google.py", line 74, in translate
+    raise RequestError()
+deep_translator.exceptions.RequestError: Request exception can happen due to an api connection error. Please check your connection and try again
+2024-12-19 13:56:44 - INFO - Polling stopped
+2024-12-19 13:56:45 - INFO - Polling stopped for bot @ourparser_bot id=7596450347 - 'ourparserbot'
