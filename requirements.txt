@@ -5,3 +5,4 @@ sumy
 langid
 deep_translator
 pdfplumber
+aiogram
